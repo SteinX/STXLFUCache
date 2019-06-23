@@ -1,0 +1,6 @@
+framework module STXLFUCache {
+  umbrella header "STXLFUCache-umbrella.h"
+
+  export *
+  module * { export * }
+}

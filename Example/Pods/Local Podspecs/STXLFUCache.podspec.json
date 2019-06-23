@@ -1,0 +1,23 @@
+{
+  "name": "STXLFUCache",
+  "version": "0.1.0",
+  "summary": "A short description of STXLFUCache.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/SteinX/STXLFUCache",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "SteinX": "steinxia@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/SteinX/STXLFUCache.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "STXLFUCache/Classes/**/*",
+  "libraries": "c++"
+}

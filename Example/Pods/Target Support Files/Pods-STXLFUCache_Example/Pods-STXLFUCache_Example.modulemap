@@ -1,0 +1,6 @@
+framework module Pods_STXLFUCache_Example {
+  umbrella header "Pods-STXLFUCache_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
