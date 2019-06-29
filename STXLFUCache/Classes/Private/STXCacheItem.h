@@ -6,14 +6,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <list>
+
+@class STXFrequencyItem;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface STXCacheItem : NSObject
 
-@property (nonatomic) NSString *key;
-@property (nonatomic) id value;
-@property (nonatomic) void* frequencyNode;
+@property (nonatomic, readonly) NSString *key;
+@property (nonatomic, readonly) id value;
+
+@property (nonatomic, weak, nullable) STXFrequencyItem *frequencyNode;
+
++ (instancetype)itemWithKey:(NSString *)key value:(id)value;
+
+- (BOOL)isEqualToCacheItem:(STXCacheItem *)cacheItem;
 
 @end
 

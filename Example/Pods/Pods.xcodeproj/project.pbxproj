@@ -25,9 +25,9 @@
 		9A3B6C8822BF779400B8B5D1 /* STXLFUCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A3B6C8622BF779400B8B5D1 /* STXLFUCache.h */; };
 		9A3B6C8922BF779400B8B5D1 /* STXLFUCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B6C8722BF779400B8B5D1 /* STXLFUCache.mm */; };
 		9A3B6C8E22BFE20900B8B5D1 /* STXCacheItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A3B6C8C22BFE20900B8B5D1 /* STXCacheItem.h */; };
-		9A3B6C8F22BFE20900B8B5D1 /* STXCacheItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B6C8D22BFE20900B8B5D1 /* STXCacheItem.m */; };
+		9A3B6C8F22BFE20900B8B5D1 /* STXCacheItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B6C8D22BFE20900B8B5D1 /* STXCacheItem.mm */; };
 		9A3B6C9222BFE2C400B8B5D1 /* STXFrequencyItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A3B6C9022BFE2C400B8B5D1 /* STXFrequencyItem.h */; };
-		9A3B6C9322BFE2C400B8B5D1 /* STXFrequencyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B6C9122BFE2C400B8B5D1 /* STXFrequencyItem.m */; };
+		9A3B6C9322BFE2C400B8B5D1 /* STXFrequencyItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B6C9122BFE2C400B8B5D1 /* STXFrequencyItem.mm */; };
 		C282BC9E15B4ED8E1CB4CC0FEC7E1EE4 /* Pods-STXLFUCache_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66F2D4C2AB13DF1F725D4E1CC816DE18 /* Pods-STXLFUCache_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAA203AAD12C91872DA609022E286898 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		D0FB3A0E3734915B2E23E790925C5863 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -69,9 +69,9 @@
 		9A3B6C8622BF779400B8B5D1 /* STXLFUCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = STXLFUCache.h; path = STXLFUCache/Classes/STXLFUCache.h; sourceTree = "<group>"; };
 		9A3B6C8722BF779400B8B5D1 /* STXLFUCache.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = STXLFUCache.mm; path = STXLFUCache/Classes/STXLFUCache.mm; sourceTree = "<group>"; };
 		9A3B6C8C22BFE20900B8B5D1 /* STXCacheItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STXCacheItem.h; sourceTree = "<group>"; };
-		9A3B6C8D22BFE20900B8B5D1 /* STXCacheItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STXCacheItem.m; sourceTree = "<group>"; };
+		9A3B6C8D22BFE20900B8B5D1 /* STXCacheItem.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = STXCacheItem.mm; sourceTree = "<group>"; };
 		9A3B6C9022BFE2C400B8B5D1 /* STXFrequencyItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STXFrequencyItem.h; sourceTree = "<group>"; };
-		9A3B6C9122BFE2C400B8B5D1 /* STXFrequencyItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STXFrequencyItem.m; sourceTree = "<group>"; };
+		9A3B6C9122BFE2C400B8B5D1 /* STXFrequencyItem.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = STXFrequencyItem.mm; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AC1A871BC05C02D2B9CFA1E9DDF2A1CC /* Pods-STXLFUCache_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-STXLFUCache_Example.modulemap"; sourceTree = "<group>"; };
 		BA58471F0016D8433A3AEA24CAD9360F /* Pods-STXLFUCache_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-STXLFUCache_Tests.modulemap"; sourceTree = "<group>"; };
@@ -154,9 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				9A3B6C8C22BFE20900B8B5D1 /* STXCacheItem.h */,
-				9A3B6C8D22BFE20900B8B5D1 /* STXCacheItem.m */,
+				9A3B6C8D22BFE20900B8B5D1 /* STXCacheItem.mm */,
 				9A3B6C9022BFE2C400B8B5D1 /* STXFrequencyItem.h */,
-				9A3B6C9122BFE2C400B8B5D1 /* STXFrequencyItem.m */,
+				9A3B6C9122BFE2C400B8B5D1 /* STXFrequencyItem.mm */,
 			);
 			name = Private;
 			path = STXLFUCache/Classes/Private;
@@ -355,8 +355,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A3B6C8922BF779400B8B5D1 /* STXLFUCache.mm in Sources */,
-				9A3B6C9322BFE2C400B8B5D1 /* STXFrequencyItem.m in Sources */,
-				9A3B6C8F22BFE20900B8B5D1 /* STXCacheItem.m in Sources */,
+				9A3B6C9322BFE2C400B8B5D1 /* STXFrequencyItem.mm in Sources */,
+				9A3B6C8F22BFE20900B8B5D1 /* STXCacheItem.mm in Sources */,
 				DBE4FC0D98BD8B40811778BE52D0977E /* Pods-STXLFUCache_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
