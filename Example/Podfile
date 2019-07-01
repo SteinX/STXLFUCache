@@ -7,7 +7,6 @@ target 'STXLFUCache_Example' do
 
   target 'STXLFUCache_Tests' do
     inherit! :search_paths
-
     
   end
 end

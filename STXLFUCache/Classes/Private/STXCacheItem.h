@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <list>
 
 @class STXFrequencyItem;
 
@@ -17,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSString *key;
 @property (nonatomic, readonly) id value;
 
-@property (nonatomic, weak, nullable) STXFrequencyItem *frequencyNode;
+@property (nonatomic, weak, nullable) STXFrequencyItem *frequencyItem;
 
 + (instancetype)itemWithKey:(NSString *)key value:(id)value;
 

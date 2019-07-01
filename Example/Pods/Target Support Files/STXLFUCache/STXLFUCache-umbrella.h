@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "STXCacheItem.h"
+#import "STXFrequencyItem.h"
+#import "STXLFUCache.h"
 
 FOUNDATION_EXPORT double STXLFUCacheVersionNumber;
 FOUNDATION_EXPORT const unsigned char STXLFUCacheVersionString[];

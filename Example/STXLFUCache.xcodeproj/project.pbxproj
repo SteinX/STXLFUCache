@@ -19,10 +19,14 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		6E9528882991F21564A992AB /* Pods_STXLFUCache_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F78E3426293B14691D2781 /* Pods_STXLFUCache_Tests.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		9F73F5AD9A4BD7AB5B4C03A1 /* Pods_STXLFUCache_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CA8B6C5BD24B933155C992 /* Pods_STXLFUCache_Tests.framework */; };
+		9A148AD222C761E2003A4FCC /* STXCachItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A148AD122C761E2003A4FCC /* STXCachItemTests.m */; };
+		9A148AD522C7666B003A4FCC /* STXFrequencyItemTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9A148AD422C7666B003A4FCC /* STXFrequencyItemTests.mm */; };
+		9A148AD722C768DC003A4FCC /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A148AD622C768DB003A4FCC /* libc++.tbd */; };
+		9A528E3622C795A1001C7F66 /* STXFrequencyItem+PrivateExposure.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9A528E3522C795A1001C7F66 /* STXFrequencyItem+PrivateExposure.mm */; };
+		9AF7582D22C8AE1A0051C516 /* STXLFUCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF7582C22C8AE1A0051C516 /* STXLFUCacheTests.m */; };
 		ED8143EA761CBDAE018A8712 /* Pods_STXLFUCache_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C714590880769B7D4F3337DD /* Pods_STXLFUCache_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,19 +58,29 @@
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		62C3935F8B7A20C403CA4587 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F971CBC6587BCD64D9BF1E3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9212C5DE2CCE7FBB0347D28E /* Pods-STXLFUCache_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STXLFUCache_Tests.debug.xcconfig"; path = "Target Support Files/Pods-STXLFUCache_Tests/Pods-STXLFUCache_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		93CA8B6C5BD24B933155C992 /* Pods_STXLFUCache_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STXLFUCache_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A148AD022C761E2003A4FCC /* STXCachItemTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STXCachItemTests.h; sourceTree = "<group>"; };
+		9A148AD122C761E2003A4FCC /* STXCachItemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STXCachItemTests.m; sourceTree = "<group>"; };
+		9A148AD322C7666B003A4FCC /* STXFrequencyItemTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STXFrequencyItemTests.h; sourceTree = "<group>"; };
+		9A148AD422C7666B003A4FCC /* STXFrequencyItemTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = STXFrequencyItemTests.mm; sourceTree = "<group>"; };
+		9A148AD622C768DB003A4FCC /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		9A528E3422C795A1001C7F66 /* STXFrequencyItem+PrivateExposure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "STXFrequencyItem+PrivateExposure.h"; path = "Extension/STXFrequencyItem+PrivateExposure.h"; sourceTree = "<group>"; };
+		9A528E3522C795A1001C7F66 /* STXFrequencyItem+PrivateExposure.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = "STXFrequencyItem+PrivateExposure.mm"; path = "Extension/STXFrequencyItem+PrivateExposure.mm"; sourceTree = "<group>"; };
+		9AF7582B22C8AE1A0051C516 /* STXLFUCacheTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STXLFUCacheTests.h; sourceTree = "<group>"; };
+		9AF7582C22C8AE1A0051C516 /* STXLFUCacheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STXLFUCacheTests.m; sourceTree = "<group>"; };
 		AE471EFBA4FE08D61CBE9292 /* Pods-STXLFUCache_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STXLFUCache_Example.debug.xcconfig"; path = "Target Support Files/Pods-STXLFUCache_Example/Pods-STXLFUCache_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B8618A9873978F260543DC6F /* Pods-STXLFUCache_Example-STXLFUCache_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STXLFUCache_Example-STXLFUCache_Tests.debug.xcconfig"; path = "Target Support Files/Pods-STXLFUCache_Example-STXLFUCache_Tests/Pods-STXLFUCache_Example-STXLFUCache_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCDEE91449FC9BFBCCB3DDB6 /* Pods-STXLFUCache_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STXLFUCache_Example.release.xcconfig"; path = "Target Support Files/Pods-STXLFUCache_Example/Pods-STXLFUCache_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C714590880769B7D4F3337DD /* Pods_STXLFUCache_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STXLFUCache_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4494319A3A620FBDF5ECF69 /* Pods-STXLFUCache_Example-STXLFUCache_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STXLFUCache_Example-STXLFUCache_Tests.release.xcconfig"; path = "Target Support Files/Pods-STXLFUCache_Example-STXLFUCache_Tests/Pods-STXLFUCache_Example-STXLFUCache_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DB9D81FE1DB9350109A36A00 /* STXLFUCache.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = STXLFUCache.podspec; path = ../STXLFUCache.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DFE4BDF47BD7AAF30E24551B /* Pods-STXLFUCache_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STXLFUCache_Tests.release.xcconfig"; path = "Target Support Files/Pods-STXLFUCache_Tests/Pods-STXLFUCache_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F7F78E3426293B14691D2781 /* Pods_STXLFUCache_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STXLFUCache_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +99,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A148AD722C768DC003A4FCC /* libc++.tbd in Frameworks */,
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				9F73F5AD9A4BD7AB5B4C03A1 /* Pods_STXLFUCache_Tests.framework in Frameworks */,
+				6E9528882991F21564A992AB /* Pods_STXLFUCache_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,12 +134,13 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A148AD622C768DB003A4FCC /* libc++.tbd */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				C714590880769B7D4F3337DD /* Pods_STXLFUCache_Example.framework */,
-				93CA8B6C5BD24B933155C992 /* Pods_STXLFUCache_Tests.framework */,
+				F7F78E3426293B14691D2781 /* Pods_STXLFUCache_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,7 +175,13 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
+				9A528E3322C79544001C7F66 /* Extension */,
+				9A148AD022C761E2003A4FCC /* STXCachItemTests.h */,
+				9A148AD122C761E2003A4FCC /* STXCachItemTests.m */,
+				9A148AD322C7666B003A4FCC /* STXFrequencyItemTests.h */,
+				9A148AD422C7666B003A4FCC /* STXFrequencyItemTests.mm */,
+				9AF7582B22C8AE1A0051C516 /* STXLFUCacheTests.h */,
+				9AF7582C22C8AE1A0051C516 /* STXLFUCacheTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -185,6 +207,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		9A528E3322C79544001C7F66 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9A528E3422C795A1001C7F66 /* STXFrequencyItem+PrivateExposure.h */,
+				9A528E3522C795A1001C7F66 /* STXFrequencyItem+PrivateExposure.mm */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		B7EE76742B2E3993DCE22EFB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +223,8 @@
 				BCDEE91449FC9BFBCCB3DDB6 /* Pods-STXLFUCache_Example.release.xcconfig */,
 				9212C5DE2CCE7FBB0347D28E /* Pods-STXLFUCache_Tests.debug.xcconfig */,
 				DFE4BDF47BD7AAF30E24551B /* Pods-STXLFUCache_Tests.release.xcconfig */,
+				B8618A9873978F260543DC6F /* Pods-STXLFUCache_Example-STXLFUCache_Tests.debug.xcconfig */,
+				D4494319A3A620FBDF5ECF69 /* Pods-STXLFUCache_Example-STXLFUCache_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -207,6 +240,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				7DCE8DD589ED9EDC388EF1D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,6 +349,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7DCE8DD589ED9EDC388EF1D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-STXLFUCache_Example/Pods-STXLFUCache_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/STXLFUCache/STXLFUCache.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/STXLFUCache.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-STXLFUCache_Example/Pods-STXLFUCache_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		943C35B1D3EA6EF2EE0CD52B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,7 +406,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				9A528E3622C795A1001C7F66 /* STXFrequencyItem+PrivateExposure.mm in Sources */,
+				9A148AD222C761E2003A4FCC /* STXCachItemTests.m in Sources */,
+				9AF7582D22C8AE1A0051C516 /* STXLFUCacheTests.m in Sources */,
+				9A148AD522C7666B003A4FCC /* STXFrequencyItemTests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

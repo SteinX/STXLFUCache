@@ -17,28 +17,27 @@
 
 @implementation STXFrequencyItem
 
-+ (instancetype)itemWithFrequency:(NSUInteger)frequency toList:(std::list<STXFrequencyItem *>)frequencyList {
-    return [self itemWithFrequency:frequency toList:frequencyList afterNode:frequencyList.end()];
++ (instancetype)itemWithFrequency:(NSUInteger)frequency toList:(std::list<STXFrequencyItem *> *)frequencyList {
+    return [self itemWithFrequency:frequency toList:frequencyList afterNode:frequencyList->end()];
 }
 
 + (instancetype)itemWithFrequency:(NSUInteger)frequency
-                           toList:(std::list<STXFrequencyItem *>)frequencyList
+                           toList:(std::list<STXFrequencyItem *> *)frequencyList
                         afterNode:(STXFrequencyListNode)previousNode
 {
     auto instance = [STXFrequencyItem new];
     instance.frequency = frequency;
     
-    if (previousNode != frequencyList.end()) {
+    if (previousNode != frequencyList->end()) {
         auto nextNode = std::next(previousNode);
-        frequencyList.insert(nextNode, instance);
+        frequencyList->insert(nextNode, instance);
         instance.listNode = std::prev(nextNode);
     } else {
-        frequencyList.push_back(instance);
-        instance.listNode = std::prev(frequencyList.end());
+        frequencyList->push_back(instance);
+        instance.listNode = std::prev(frequencyList->end());
     }
     
     return instance;
-    
 }
 
 - (instancetype)init {
@@ -50,27 +49,22 @@
 
 - (void)addMember:(STXCacheItem *)member {
     @synchronized(_members) {
-        if ([_members objectForKey:member]) {
-            return;
-        }
-        
         [_members setObject:@(1) forKey:member];
     }
 }
 
 - (void)removeMember:(STXCacheItem *)member {
     @synchronized(_members) {
-        if (![_members objectForKey:member]) {
-            return;
-        }
-        
         [_members removeObjectForKey:member];
     }
 }
 
-- (void)dropMember {
+- (STXCacheItem *)dropMember {
     @synchronized (_members) {
-        [_members removeObjectForKey:_members.keyEnumerator.nextObject];
+        auto removedKey = _members.keyEnumerator.nextObject;
+        [_members removeObjectForKey:removedKey];
+        
+        return removedKey;
     }
 }
 
@@ -79,11 +73,13 @@
 }
 
 - (BOOL)hasNoMember {
-    return _members.count == 0;
+    @synchronized (_members) {
+        return _members.count == 0;
+    }
 }
 
-- (void)eraseFromList:(std::list<STXFrequencyItem *>)list {
-    list.erase(_listNode);
+- (void)eraseFromList:(std::list<STXFrequencyItem *> *)list {
+    list->erase(_listNode);
 }
 
 @end

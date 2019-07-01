@@ -15,15 +15,13 @@
 static NSUInteger _defaultCacheCapacity = 100;
 
 @implementation STXLFUCache {
-    std::atomic<NSUInteger> _size;
-    std::atomic<NSUInteger> _capacity;
-    
     dispatch_queue_t _syncQueue;
     
     NSMapTable<NSString *, STXCacheItem *> *_cacheMap;
     std::list<STXFrequencyItem *> _frequencyList;
 }
-@dynamic size, capacity;
+@dynamic size;
+@synthesize capacity = _capacity;
 
 + (instancetype)shared {
     static dispatch_once_t onceToken;
@@ -46,11 +44,11 @@ static NSUInteger _defaultCacheCapacity = 100;
         _capacity = capacity;
         
         auto identifier = [NSUUID UUID].UUIDString;
-        auto queueName = [@"com.stx.cache.sync." stringByAppendingString:identifier];
+        auto queueName = [@"com.stx.lfucache.sync." stringByAppendingString:identifier];
         auto attributes = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_CONCURRENT, QOS_CLASS_UTILITY, 0);
         _syncQueue = dispatch_queue_create([queueName UTF8String], attributes);
         
-        _passiveEvictionCount = 20;
+        _passiveEvictionCount = MAX(_capacity / 5, 1);
         
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(onRecevingMemorWarningNotif:)
@@ -66,19 +64,15 @@ static NSUInteger _defaultCacheCapacity = 100;
     
     __block STXCacheItem *exsitingCacheItem;
     dispatch_sync(_syncQueue, ^{
-        exsitingCacheItem = [_cacheMap objectForKey:key];
+        exsitingCacheItem = [self->_cacheMap objectForKey:key];
     });
-    
-    if (!exsitingCacheItem) {
-        _size++;
-    }
     
     if ([self _reachCapcaity]) {
         [self evict:_passiveEvictionCount];
     }
     
     dispatch_barrier_sync(_syncQueue, ^{
-        [_cacheMap setObject:cacheItem forKey:key];
+        [self->_cacheMap setObject:cacheItem forKey:key];
         
         [self _incrementCacheFrequency:cacheItem];
     });
@@ -86,14 +80,14 @@ static NSUInteger _defaultCacheCapacity = 100;
 
 - (void)removeObjectForKey:(NSString *)key {
     dispatch_barrier_sync(_syncQueue, ^{
-        auto cacheItem = [_cacheMap objectForKey:key];
-        auto frequencyNode = cacheItem.frequencyNode;
+        auto cacheItem = [self->_cacheMap objectForKey:key];
+        auto frequencyNode = cacheItem.frequencyItem;
         
         if (!cacheItem) {
             return;
         }
         
-        [_cacheMap removeObjectForKey:key];
+        [self->_cacheMap removeObjectForKey:key];
         
         if (!frequencyNode) {
             return;
@@ -101,18 +95,20 @@ static NSUInteger _defaultCacheCapacity = 100;
         
         [frequencyNode removeMember:cacheItem];
         if (frequencyNode.hasNoMember) {
-            [frequencyNode eraseFromList:_frequencyList];
+            [frequencyNode eraseFromList:&self->_frequencyList];
         }
-        
-        _size--;
     });
 }
 
 - (id)objectForKey:(NSString *)key {
     __block STXCacheItem *object;
     dispatch_sync(_syncQueue, ^{
-        object = [_cacheMap objectForKey:key];
+        object = [self->_cacheMap objectForKey:key];
     });
+    
+    if (!object) {
+        return nil;
+    }
     
     dispatch_barrier_sync(_syncQueue, ^{
         [self _incrementCacheFrequency:object];
@@ -122,14 +118,25 @@ static NSUInteger _defaultCacheCapacity = 100;
 }
 
 - (void)evict:(NSUInteger)count {
+    auto size = self.size;
+    if (!size) {
+        return;
+    }
+    
     dispatch_barrier_sync(_syncQueue, ^{
+        if (size <= count) {
+            return [self->_cacheMap removeAllObjects];
+        }
+        
         NSInteger i = 0;
         
-        for (auto it = _frequencyList.begin(); it != _frequencyList.end(); it++) {
+        for (auto it = self->_frequencyList.begin(); it != self->_frequencyList.end(); it++) {
             auto frequencyItem = *it;
             
             while (i < count && !frequencyItem.hasNoMember) {
-                [frequencyItem dropMember];
+                auto removedCache = [frequencyItem dropMember];
+                [self->_cacheMap removeObjectForKey:removedCache.key];
+                
                 i++;
             }
             
@@ -142,7 +149,11 @@ static NSUInteger _defaultCacheCapacity = 100;
 
 #pragma mark - Private
 - (void)_incrementCacheFrequency:(STXCacheItem *)cacheItem {
-    auto currentFrequency = cacheItem.frequencyNode;
+    if (!cacheItem) {
+        return;
+    }
+    
+    auto currentFrequency = cacheItem.frequencyItem;
     
     NSInteger nextFrequency;
     STXFrequencyListNode nextFrequnecyListNode = _frequencyList.end();
@@ -150,6 +161,7 @@ static NSUInteger _defaultCacheCapacity = 100;
     // Find the next frequency node
     if (!currentFrequency) {
         nextFrequency = 1;
+        nextFrequnecyListNode = _frequencyList.begin();
     } else {
         nextFrequency = currentFrequency.frequency + 1;
         nextFrequnecyListNode = [currentFrequency nextListNode];
@@ -164,23 +176,24 @@ static NSUInteger _defaultCacheCapacity = 100;
     STXFrequencyItem *newFrequencyItem;
     if (nextFrequnecyListNode == _frequencyList.end()) {
         if (!currentFrequency) {
-            newFrequencyItem = [STXFrequencyItem itemWithFrequency:nextFrequency toList:_frequencyList];
+            newFrequencyItem = [STXFrequencyItem itemWithFrequency:nextFrequency toList:&_frequencyList];
         } else {
-            newFrequencyItem = [STXFrequencyItem itemWithFrequency:nextFrequency toList:_frequencyList afterNode:currentFrequency.listNode];
+            newFrequencyItem = [STXFrequencyItem itemWithFrequency:nextFrequency toList:&_frequencyList afterNode:currentFrequency.listNode];
         }
     } else {
         newFrequencyItem = *nextFrequnecyListNode;
     }
     
+    cacheItem.frequencyItem = newFrequencyItem;
     [newFrequencyItem addMember:cacheItem];
 }
 
 - (BOOL)_reachCapcaity {
-    return self.capacity <= _cacheMap.count;
+    return _capacity <= _cacheMap.count;
 }
 
 - (void)onRecevingMemorWarningNotif:(NSNotification *)notif {
-    [_cacheMap removeAllObjects];
+    [self evict:_capacity];
 }
 
 #pragma mark - Getter && Setter
@@ -192,5 +205,17 @@ static NSUInteger _defaultCacheCapacity = 100;
     _defaultCacheCapacity = defaultCapacity;
 }
 
+- (NSUInteger)capacity {
+    return _capacity;
+}
+
+- (NSUInteger)size {
+    __block NSUInteger size;
+    dispatch_sync(_syncQueue, ^{
+        size = self->_cacheMap.count;
+    });
+    
+    return size;
+}
 
 @end

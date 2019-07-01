@@ -21,17 +21,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) BOOL hasNoMember;
 
-+ (instancetype)itemWithFrequency:(NSUInteger)frequency toList:(std::list<STXFrequencyItem *>)frequencyList;
++ (instancetype)itemWithFrequency:(NSUInteger)frequency toList:(std::list<STXFrequencyItem *> *)frequencyList;
 + (instancetype)itemWithFrequency:(NSUInteger)frequency
-                           toList:(std::list<STXFrequencyItem *>)frequencyList
+                           toList:(std::list<STXFrequencyItem *> *)frequencyList
                         afterNode:(STXFrequencyListNode)previousNode;
 
 - (void)addMember:(STXCacheItem *)member;
 - (void)removeMember:(STXCacheItem *)member;
-- (void)dropMember;
+- (STXCacheItem *)dropMember;
 
 - (STXFrequencyListNode)nextListNode;
-- (void)eraseFromList:(std::list<STXFrequencyItem *>)list;
+- (void)eraseFromList:(std::list<STXFrequencyItem *> *)list;
 
 @end
 
