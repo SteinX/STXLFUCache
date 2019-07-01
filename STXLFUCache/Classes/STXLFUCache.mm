@@ -125,23 +125,35 @@ static NSUInteger _defaultCacheCapacity = 100;
     
     dispatch_barrier_sync(_syncQueue, ^{
         if (size <= count) {
+            self->_frequencyList.clear();
             return [self->_cacheMap removeAllObjects];
         }
         
         NSInteger i = 0;
         
-        for (auto it = self->_frequencyList.begin(); it != self->_frequencyList.end(); it++) {
-            auto frequencyItem = *it;
-            
-            while (i < count && !frequencyItem.hasNoMember) {
-                auto removedCache = [frequencyItem dropMember];
-                [self->_cacheMap removeObjectForKey:removedCache.key];
+        for (auto it = self->_frequencyList.begin(); it != self->_frequencyList.end();) {
+            @autoreleasepool {
+                auto frequencyItem = *it;
                 
-                i++;
-            }
-            
-            if (i >= count) {
-                break;
+                while (i < count && !frequencyItem.hasNoMember) {
+                    auto removedCache = [frequencyItem dropMember];
+                    [self->_cacheMap removeObjectForKey:removedCache.key];
+                    
+                    i++;
+                }
+                
+                if (frequencyItem.hasNoMember) {
+                    auto emptyFrequencyItem = it;
+                    it++;
+                    
+                    self->_frequencyList.erase(emptyFrequencyItem);
+                } else {
+                    it++;
+                }
+                
+                if (i >= count) {
+                    break;
+                }
             }
         }
     });

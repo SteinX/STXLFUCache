@@ -119,7 +119,7 @@
 - (void)testMemoryWarningCase {
     __auto_type cache = [[STXLFUCache alloc] initWithCapacity:5];
     
-    for (NSInteger i = 0; i < 5; i++) {
+    for (NSInteger i = 0; i < 50000; i++) {
         __auto_type identifier = [NSString stringWithFormat:@"identifier-%zd", i];
         __auto_type value = [NSString stringWithFormat:@"value-%zd", i];
         
