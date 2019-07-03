@@ -6,7 +6,7 @@
 //  Copyright © 2019 SteinX. All rights reserved.
 //
 
-#import <STXFrequencyItem.h>
+#import "STXFrequencyItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

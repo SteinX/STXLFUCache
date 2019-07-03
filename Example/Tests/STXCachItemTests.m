@@ -8,7 +8,7 @@
 
 #import "STXCachItemTests.h"
 
-#import <STXCacheItem.h>
+#import "STXCacheItem.h"
 
 @implementation STXCachItemTests
 

@@ -64,6 +64,8 @@
 		7F971CBC6587BCD64D9BF1E3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9212C5DE2CCE7FBB0347D28E /* Pods-STXLFUCache_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STXLFUCache_Tests.debug.xcconfig"; path = "Target Support Files/Pods-STXLFUCache_Tests/Pods-STXLFUCache_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A072D1622CD126000DA5D2A /* STXCacheItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXCacheItem.h; sourceTree = "<group>"; };
+		9A072D1722CD126000DA5D2A /* STXFrequencyItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXFrequencyItem.h; sourceTree = "<group>"; };
 		9A148AD022C761E2003A4FCC /* STXCachItemTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STXCachItemTests.h; sourceTree = "<group>"; };
 		9A148AD122C761E2003A4FCC /* STXCachItemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STXCachItemTests.m; sourceTree = "<group>"; };
 		9A148AD322C7666B003A4FCC /* STXFrequencyItemTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STXFrequencyItemTests.h; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				9A072D1522CD126000DA5D2A /* Exposure */,
 				9A528E3322C79544001C7F66 /* Extension */,
 				9A148AD022C761E2003A4FCC /* STXCachItemTests.h */,
 				9A148AD122C761E2003A4FCC /* STXCachItemTests.m */,
@@ -205,6 +208,15 @@
 				7F971CBC6587BCD64D9BF1E3 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		9A072D1522CD126000DA5D2A /* Exposure */ = {
+			isa = PBXGroup;
+			children = (
+				9A072D1622CD126000DA5D2A /* STXCacheItem.h */,
+				9A072D1722CD126000DA5D2A /* STXFrequencyItem.h */,
+			);
+			path = Exposure;
 			sourceTree = "<group>";
 		};
 		9A528E3322C79544001C7F66 /* Extension */ = {

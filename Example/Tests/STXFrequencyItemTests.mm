@@ -10,8 +10,8 @@
 #import "STXFrequencyItem+PrivateExposure.h"
 
 #import <list>
-#import <STXFrequencyItem.h>
-#import <STXCacheItem.h>
+#import "STXFrequencyItem.h"
+#import "STXCacheItem.h"
 
 @implementation STXFrequencyItemTests
 
