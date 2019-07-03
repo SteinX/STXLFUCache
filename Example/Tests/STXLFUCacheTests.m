@@ -72,7 +72,7 @@
 
 - (void)testEvictionOverCapacity {
     __auto_type cache = [[STXLFUCache alloc] initWithCapacity:5];
-    cache.passiveEvictionCount = 1;
+    cache.activeEvictionCount = 1;
     
     for (NSInteger i = 0; i < 5; i++) {
         __auto_type identifier = [NSString stringWithFormat:@"identifier-%zd", i];
@@ -106,7 +106,7 @@
     __auto_type evictedObjectFlag = (![cache objectForKey:evictionCandidateKey] || ![cache objectForKey:evictionCandidateKey2]);
     XCTAssert(cache.size == 5 && evictedObjectFlag, @"One of the candidate must be evicated");
     
-    cache.passiveEvictionCount = 2;
+    cache.activeEvictionCount = 2;
     
     [cache setObject:@"testcache-overpass1" forKey:@"identifier-7"];
     evictedObjectFlag = (![cache objectForKey:evictionCandidateKey] && ![cache objectForKey:evictionCandidateKey2] && ![cache objectForKey:evictionCandidateKey3]);

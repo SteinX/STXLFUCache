@@ -48,7 +48,7 @@ static NSUInteger _defaultCacheCapacity = 100;
         auto attributes = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_CONCURRENT, QOS_CLASS_UTILITY, 0);
         _syncQueue = dispatch_queue_create([queueName UTF8String], attributes);
         
-        _passiveEvictionCount = MAX(_capacity / 5, 1);
+        _activeEvictionCount = MAX(_capacity / 5, 1);
         
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(onRecevingMemorWarningNotif:)
@@ -68,7 +68,7 @@ static NSUInteger _defaultCacheCapacity = 100;
     });
     
     if ([self _reachCapcaity]) {
-        [self evict:_passiveEvictionCount];
+        [self evict:_activeEvictionCount];
     }
     
     dispatch_barrier_sync(_syncQueue, ^{

@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17EA3CBD5F1ACD2FE8AE29CA7E1A06CF /* STXFrequencyItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 34CC19703FF73AD011B45333C8C57E7B /* STXFrequencyItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17F99F1EE894FAB4192DD919C70D935F /* STXLFUCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4137761E95D9DB778318DA1F677B5A5 /* STXLFUCache.mm */; };
+		10B59BF3971833B90AF0B073615BA62A /* STXFrequencyItem.h in Headers */ = {isa = PBXBuildFile; fileRef = DF2CCE36BA0FB551B500C9E35A4CCAF5 /* STXFrequencyItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24AE2EABB8F071CD374ABE3F9563E7D5 /* STXCacheItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F36C33689FBC2740CE0CF15A524587F /* STXCacheItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61A153B0D44EEDBA987FE21EADDFC9BB /* Pods-STXLFUCache_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D111EFBF1BBF25224C00B7BB5D0925A /* Pods-STXLFUCache_Tests-dummy.m */; };
-		637B177FFC584768790F73DA11BFCC48 /* STXFrequencyItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5231E8643EE3891A5ABE89780AF25AC0 /* STXFrequencyItem.mm */; };
 		63F069D85A38474004B0FDE7929AADF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		6B3A9941F999ACC0500C710B76414B30 /* STXLFUCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2893F164AC10630D126372A40AA660A5 /* STXLFUCache.mm */; };
 		7F0F2167B0FCFE8A30742FBAF8B02AE4 /* Pods-STXLFUCache_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C90B5B0E0C0D2633420BE30B41263F4A /* Pods-STXLFUCache_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E8AA73BE421C7028006196146DA3540 /* STXLFUCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C9790C98CB506E21DD768A2BE8140948 /* STXLFUCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B469BE78A321E651EB79F1BB943B3522 /* STXCacheItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7CF510D4B3B9720BACB0A257B8ACCDFA /* STXCacheItem.mm */; };
-		BD4F85540A0F4DDAD762115819112301 /* STXLFUCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 805F10E3C39CCD503BF768273FE6AA2B /* STXLFUCache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1308B092ADA1605A1C206DCCD3E2C81 /* STXLFUCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDFB3209CB1417DE08837AF34770DBF /* STXLFUCache-dummy.m */; };
+		7F4F33430469E76D64309862F076C1B7 /* STXCacheItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB15480BCDD665243949FA47A76098B8 /* STXCacheItem.mm */; };
+		97CE5956890EE87632E8972CAE5074A5 /* STXFrequencyItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = F46F411DE209782AEF73F1DEA2FC9D17 /* STXFrequencyItem.mm */; };
 		C282BC9E15B4ED8E1CB4CC0FEC7E1EE4 /* Pods-STXLFUCache_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51F871EE4E43E1BB94F27E102CFFE111 /* Pods-STXLFUCache_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAA203AAD12C91872DA609022E286898 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		D0FB3A0E3734915B2E23E790925C5863 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		D0FCC65331769E285A39808E69495B44 /* STXCacheItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 791D88A835245786B366AF1508B5DB02 /* STXCacheItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2512D6F93CDB983343ED9F35442AA10 /* STXLFUCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CDF62F231B3B7F9E5F19CF87E66DEE /* STXLFUCache-dummy.m */; };
+		D2E369B3871C18616B162EC529260C76 /* STXLFUCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C47F1EA35D1FC41F3B14EBC43E6F7371 /* STXLFUCache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBE4FC0D98BD8B40811778BE52D0977E /* Pods-STXLFUCache_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF363A3E37884588F6B843032F02064D /* Pods-STXLFUCache_Example-dummy.m */; };
+		E0C468DEB3619486594E2058324E06B3 /* STXLFUCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3280653A7E907B3267CA88FB27956E54 /* STXLFUCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,43 +42,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01F18F105A7059488296EECDBFA782E4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		0DA243504C7CAAAE6D85AFE105E1B411 /* Pods_STXLFUCache_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_STXLFUCache_Tests.framework; path = "Pods-STXLFUCache_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B951ABA655A3EBE1F3E73D507992BC9 /* Pods-STXLFUCache_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STXLFUCache_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1D111EFBF1BBF25224C00B7BB5D0925A /* Pods-STXLFUCache_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-STXLFUCache_Tests-dummy.m"; sourceTree = "<group>"; };
-		218875490826828B5AE4BEAF50FE2AA3 /* STXLFUCache.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = STXLFUCache.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2293E9A9BEF14DDD1C8AB48A2D004D2A /* Pods-STXLFUCache_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STXLFUCache_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2893F164AC10630D126372A40AA660A5 /* STXLFUCache.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = STXLFUCache.mm; path = STXLFUCache/Classes/STXLFUCache.mm; sourceTree = "<group>"; };
+		2BB44FBF3565949BC6DC663CA7E1FFF4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3280653A7E907B3267CA88FB27956E54 /* STXLFUCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STXLFUCache.h; path = STXLFUCache/Classes/STXLFUCache.h; sourceTree = "<group>"; };
 		332F5CA8D7F3082780F297689AF32F4B /* Pods-STXLFUCache_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STXLFUCache_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		33E44CC86F804C255E2B3A367BE40527 /* Pods-STXLFUCache_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STXLFUCache_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		34CC19703FF73AD011B45333C8C57E7B /* STXFrequencyItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STXFrequencyItem.h; sourceTree = "<group>"; };
-		3C7F3E89BA7439746F8CE30ECA96588E /* STXLFUCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = STXLFUCache.modulemap; sourceTree = "<group>"; };
+		37CDF62F231B3B7F9E5F19CF87E66DEE /* STXLFUCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STXLFUCache-dummy.m"; sourceTree = "<group>"; };
+		3F36C33689FBC2740CE0CF15A524587F /* STXCacheItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STXCacheItem.h; path = STXLFUCache/Classes/STXCacheItem.h; sourceTree = "<group>"; };
+		3F3898481ED21A462EC80C5A07678273 /* STXLFUCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STXLFUCache.xcconfig; sourceTree = "<group>"; };
 		51F871EE4E43E1BB94F27E102CFFE111 /* Pods-STXLFUCache_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-STXLFUCache_Example-umbrella.h"; sourceTree = "<group>"; };
-		5231E8643EE3891A5ABE89780AF25AC0 /* STXFrequencyItem.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = STXFrequencyItem.mm; sourceTree = "<group>"; };
-		5FDFB3209CB1417DE08837AF34770DBF /* STXLFUCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STXLFUCache-dummy.m"; sourceTree = "<group>"; };
-		6249899885C68573D3296EADC8B489A9 /* STXLFUCache-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "STXLFUCache-Info.plist"; sourceTree = "<group>"; };
 		65E0D59CC607693EFE6C9F7235F80629 /* Pods_STXLFUCache_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_STXLFUCache_Example.framework; path = "Pods-STXLFUCache_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B78B0149CFA757C209381D01D9050D7 /* STXLFUCache.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = STXLFUCache.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6DBEF6A2C70CFB4150A1B88817F895E8 /* Pods-STXLFUCache_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-STXLFUCache_Example.modulemap"; sourceTree = "<group>"; };
-		740264E876B5A4BCF6FB45F7BEEF4984 /* STXLFUCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STXLFUCache-prefix.pch"; sourceTree = "<group>"; };
-		791D88A835245786B366AF1508B5DB02 /* STXCacheItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STXCacheItem.h; sourceTree = "<group>"; };
-		7CF510D4B3B9720BACB0A257B8ACCDFA /* STXCacheItem.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = STXCacheItem.mm; sourceTree = "<group>"; };
-		805F10E3C39CCD503BF768273FE6AA2B /* STXLFUCache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STXLFUCache-umbrella.h"; sourceTree = "<group>"; };
+		7B61964E9ABE5B479E1CBD4466A1D13F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		80DEC2A6A082A2363C9C04EAD20EF459 /* Pods-STXLFUCache_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STXLFUCache_Example-Info.plist"; sourceTree = "<group>"; };
-		845248E08C7477FCF9190F5213C8E0C9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		89329FDE8D6E9B75FC769D712263B9D3 /* STXLFUCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = STXLFUCache.modulemap; sourceTree = "<group>"; };
+		922C5418F4EC028B2C112C399B560DFC /* STXLFUCache-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "STXLFUCache-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B8078ADFFA61FC212797BE0717F6CD00 /* STXLFUCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STXLFUCache.xcconfig; sourceTree = "<group>"; };
+		C08676A6E64BCAC7BF6935B2A3B89F74 /* STXLFUCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STXLFUCache-prefix.pch"; sourceTree = "<group>"; };
 		C251EB1E2FD6866E16885CBC72CB5FC0 /* Pods-STXLFUCache_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-STXLFUCache_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C39E0DC197A7A817E6393F3558C3F67E /* STXLFUCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = STXLFUCache.framework; path = STXLFUCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47F1EA35D1FC41F3B14EBC43E6F7371 /* STXLFUCache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STXLFUCache-umbrella.h"; sourceTree = "<group>"; };
 		C4D451F3E80C5E45E8E45DC27D7A4EF5 /* Pods-STXLFUCache_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-STXLFUCache_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C90B5B0E0C0D2633420BE30B41263F4A /* Pods-STXLFUCache_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-STXLFUCache_Tests-umbrella.h"; sourceTree = "<group>"; };
-		C9790C98CB506E21DD768A2BE8140948 /* STXLFUCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STXLFUCache.h; path = STXLFUCache/Classes/STXLFUCache.h; sourceTree = "<group>"; };
 		D313522E2474096EC7287571497CB415 /* Pods-STXLFUCache_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STXLFUCache_Tests-Info.plist"; sourceTree = "<group>"; };
 		DC6E1A1B9E2190C54C2A7EACDD70E310 /* Pods-STXLFUCache_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STXLFUCache_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DF2CCE36BA0FB551B500C9E35A4CCAF5 /* STXFrequencyItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STXFrequencyItem.h; path = STXLFUCache/Classes/STXFrequencyItem.h; sourceTree = "<group>"; };
 		DF363A3E37884588F6B843032F02064D /* Pods-STXLFUCache_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-STXLFUCache_Example-dummy.m"; sourceTree = "<group>"; };
 		E171D431B5F787241B94A09BDF08465B /* Pods-STXLFUCache_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-STXLFUCache_Tests.modulemap"; sourceTree = "<group>"; };
-		E4137761E95D9DB778318DA1F677B5A5 /* STXLFUCache.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = STXLFUCache.mm; path = STXLFUCache/Classes/STXLFUCache.mm; sourceTree = "<group>"; };
 		E66842ACE70D7BBA9D2B0F3A22AF313D /* Pods-STXLFUCache_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-STXLFUCache_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E6866BFEDB06A79E38F4A934308EC560 /* Pods-STXLFUCache_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STXLFUCache_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F46F411DE209782AEF73F1DEA2FC9D17 /* STXFrequencyItem.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = STXFrequencyItem.mm; path = STXLFUCache/Classes/STXFrequencyItem.mm; sourceTree = "<group>"; };
+		FB15480BCDD665243949FA47A76098B8 /* STXCacheItem.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = STXCacheItem.mm; path = STXLFUCache/Classes/STXCacheItem.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +109,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3F121BFF270BDE2A806F634FB2FEBF91 /* Development Pods */ = {
+		2667C68670EE8ACD12500B128E2F8B24 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				53099CA93E9D065C3BBC52C8A7BE629C /* STXLFUCache */,
+				C976DDE97134B140C378D5A965887499 /* STXLFUCache */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -134,19 +134,6 @@
 			path = "Target Support Files/Pods-STXLFUCache_Example";
 			sourceTree = "<group>";
 		};
-		53099CA93E9D065C3BBC52C8A7BE629C /* STXLFUCache */ = {
-			isa = PBXGroup;
-			children = (
-				C9790C98CB506E21DD768A2BE8140948 /* STXLFUCache.h */,
-				E4137761E95D9DB778318DA1F677B5A5 /* STXLFUCache.mm */,
-				E6526BAA598D1125F1148C708352486B /* Pod */,
-				BF5556361D2E17DE0DFF9E6748A31545 /* Private */,
-				A920498226CCEB4477CE4DBF27A16878 /* Support Files */,
-			);
-			name = STXLFUCache;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		56241B1412273C7CFDB82433127FA290 /* Pods-STXLFUCache_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,30 +150,18 @@
 			path = "Target Support Files/Pods-STXLFUCache_Tests";
 			sourceTree = "<group>";
 		};
-		A920498226CCEB4477CE4DBF27A16878 /* Support Files */ = {
+		8FF255AA4AD938890C26BBF48745E6CD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3C7F3E89BA7439746F8CE30ECA96588E /* STXLFUCache.modulemap */,
-				B8078ADFFA61FC212797BE0717F6CD00 /* STXLFUCache.xcconfig */,
-				5FDFB3209CB1417DE08837AF34770DBF /* STXLFUCache-dummy.m */,
-				6249899885C68573D3296EADC8B489A9 /* STXLFUCache-Info.plist */,
-				740264E876B5A4BCF6FB45F7BEEF4984 /* STXLFUCache-prefix.pch */,
-				805F10E3C39CCD503BF768273FE6AA2B /* STXLFUCache-umbrella.h */,
+				89329FDE8D6E9B75FC769D712263B9D3 /* STXLFUCache.modulemap */,
+				3F3898481ED21A462EC80C5A07678273 /* STXLFUCache.xcconfig */,
+				37CDF62F231B3B7F9E5F19CF87E66DEE /* STXLFUCache-dummy.m */,
+				922C5418F4EC028B2C112C399B560DFC /* STXLFUCache-Info.plist */,
+				C08676A6E64BCAC7BF6935B2A3B89F74 /* STXLFUCache-prefix.pch */,
+				C47F1EA35D1FC41F3B14EBC43E6F7371 /* STXLFUCache-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/STXLFUCache";
-			sourceTree = "<group>";
-		};
-		BF5556361D2E17DE0DFF9E6748A31545 /* Private */ = {
-			isa = PBXGroup;
-			children = (
-				791D88A835245786B366AF1508B5DB02 /* STXCacheItem.h */,
-				7CF510D4B3B9720BACB0A257B8ACCDFA /* STXCacheItem.mm */,
-				34CC19703FF73AD011B45333C8C57E7B /* STXFrequencyItem.h */,
-				5231E8643EE3891A5ABE89780AF25AC0 /* STXFrequencyItem.mm */,
-			);
-			name = Private;
-			path = STXLFUCache/Classes/Private;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -197,11 +172,27 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C976DDE97134B140C378D5A965887499 /* STXLFUCache */ = {
+			isa = PBXGroup;
+			children = (
+				3F36C33689FBC2740CE0CF15A524587F /* STXCacheItem.h */,
+				FB15480BCDD665243949FA47A76098B8 /* STXCacheItem.mm */,
+				DF2CCE36BA0FB551B500C9E35A4CCAF5 /* STXFrequencyItem.h */,
+				F46F411DE209782AEF73F1DEA2FC9D17 /* STXFrequencyItem.mm */,
+				3280653A7E907B3267CA88FB27956E54 /* STXLFUCache.h */,
+				2893F164AC10630D126372A40AA660A5 /* STXLFUCache.mm */,
+				E6298148877F9F1CF652887F4A28B161 /* Pod */,
+				8FF255AA4AD938890C26BBF48745E6CD /* Support Files */,
+			);
+			name = STXLFUCache;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				3F121BFF270BDE2A806F634FB2FEBF91 /* Development Pods */,
+				2667C68670EE8ACD12500B128E2F8B24 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				D3C49F21DA395CEA10915D26C06B1192 /* Products */,
 				F385FA3CBEA16EE47C8BA1900C3E0995 /* Targets Support Files */,
@@ -226,12 +217,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E6526BAA598D1125F1148C708352486B /* Pod */ = {
+		E6298148877F9F1CF652887F4A28B161 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				01F18F105A7059488296EECDBFA782E4 /* LICENSE */,
-				845248E08C7477FCF9190F5213C8E0C9 /* README.md */,
-				218875490826828B5AE4BEAF50FE2AA3 /* STXLFUCache.podspec */,
+				2BB44FBF3565949BC6DC663CA7E1FFF4 /* LICENSE */,
+				7B61964E9ABE5B479E1CBD4466A1D13F /* README.md */,
+				6B78B0149CFA757C209381D01D9050D7 /* STXLFUCache.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -264,14 +255,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7CF7F87576A45EAAD9992C8A139522D /* Headers */ = {
+		F5BE4DB84EDD3FE9F95DEBDFB61EAAA4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0FCC65331769E285A39808E69495B44 /* STXCacheItem.h in Headers */,
-				17EA3CBD5F1ACD2FE8AE29CA7E1A06CF /* STXFrequencyItem.h in Headers */,
-				BD4F85540A0F4DDAD762115819112301 /* STXLFUCache-umbrella.h in Headers */,
-				9E8AA73BE421C7028006196146DA3540 /* STXLFUCache.h in Headers */,
+				24AE2EABB8F071CD374ABE3F9563E7D5 /* STXCacheItem.h in Headers */,
+				10B59BF3971833B90AF0B073615BA62A /* STXFrequencyItem.h in Headers */,
+				D2E369B3871C18616B162EC529260C76 /* STXLFUCache-umbrella.h in Headers */,
+				E0C468DEB3619486594E2058324E06B3 /* STXLFUCache.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,8 +311,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF76980B3CE891061252AB15590A9C38 /* Build configuration list for PBXNativeTarget "STXLFUCache" */;
 			buildPhases = (
-				B7CF7F87576A45EAAD9992C8A139522D /* Headers */,
-				93C6CEC619ED878B765CFE671C803B5F /* Sources */,
+				F5BE4DB84EDD3FE9F95DEBDFB61EAAA4 /* Headers */,
+				2F46DFEEA0A7FBD5D7C5980110E535A5 /* Sources */,
 				3512AF430C4F8A142EAE1DA1CE008DAD /* Frameworks */,
 				5237D81D79B67932353CB12ED7E0B035 /* Resources */,
 			);
@@ -387,14 +378,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		93C6CEC619ED878B765CFE671C803B5F /* Sources */ = {
+		2F46DFEEA0A7FBD5D7C5980110E535A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B469BE78A321E651EB79F1BB943B3522 /* STXCacheItem.mm in Sources */,
-				637B177FFC584768790F73DA11BFCC48 /* STXFrequencyItem.mm in Sources */,
-				C1308B092ADA1605A1C206DCCD3E2C81 /* STXLFUCache-dummy.m in Sources */,
-				17F99F1EE894FAB4192DD919C70D935F /* STXLFUCache.mm in Sources */,
+				7F4F33430469E76D64309862F076C1B7 /* STXCacheItem.mm in Sources */,
+				97CE5956890EE87632E8972CAE5074A5 /* STXFrequencyItem.mm in Sources */,
+				D2512D6F93CDB983343ED9F35442AA10 /* STXLFUCache-dummy.m in Sources */,
+				6B3A9941F999ACC0500C710B76414B30 /* STXLFUCache.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,7 +649,7 @@
 		};
 		98A402BCD6F51D058D54D8843703BF47 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8078ADFFA61FC212797BE0717F6CD00 /* STXLFUCache.xcconfig */;
+			baseConfigurationReference = 3F3898481ED21A462EC80C5A07678273 /* STXLFUCache.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -723,7 +714,7 @@
 		};
 		CBD533C237B1D77F59FBA37323C450D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8078ADFFA61FC212797BE0717F6CD00 /* STXLFUCache.xcconfig */;
+			baseConfigurationReference = 3F3898481ED21A462EC80C5A07678273 /* STXLFUCache.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

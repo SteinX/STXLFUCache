@@ -5,11 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/STXLFUCache.svg?style=flat)](https://cocoapods.org/pods/STXLFUCache)
 [![Platform](https://img.shields.io/cocoapods/p/STXLFUCache.svg?style=flat)](https://cocoapods.org/pods/STXLFUCache)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+STXLFUCache is a basic LFU memory cache of which the time complexity of all elementary operations are O(1). 
+Thanks to all the authors of this [excellent paper](http://dhruvbird.com/lfu.pdf) to make this happen.
 
 ## Installation
 
@@ -19,6 +16,8 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'STXLFUCache'
 ```
+## Usage
+You can use it as the basic `NSCache`, the interfaces are self-explanatory
 
 ## Author
 
@@ -27,3 +26,5 @@ SteinX, steinxia@gmail.com
 ## License
 
 STXLFUCache is available under the MIT license. See the LICENSE file for more info.
+
+
