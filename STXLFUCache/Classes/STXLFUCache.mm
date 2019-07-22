@@ -58,6 +58,10 @@ static NSUInteger _defaultCacheCapacity = 100;
     return self;
 }
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 #pragma mark - Public
 - (void)setObject:(id)object forKey:(NSString *)key {
     auto cacheItem = [STXCacheItem itemWithKey:key value:object];
