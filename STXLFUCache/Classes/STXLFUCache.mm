@@ -8,6 +8,7 @@
 #import "STXLFUCache.h"
 #import "STXFrequencyItem.h"
 #import "STXCacheItem.h"
+#import "STXRWLock.h"
 
 #import <list>
 #import <atomic>
@@ -15,7 +16,7 @@
 static NSUInteger _defaultCacheCapacity = 100;
 
 @implementation STXLFUCache {
-    dispatch_queue_t _syncQueue;
+    STXRWLock *_lock;
     
     NSMapTable<NSString *, STXCacheItem *> *_cacheMap;
     std::list<STXFrequencyItem *> _frequencyList;
@@ -43,11 +44,8 @@ static NSUInteger _defaultCacheCapacity = 100;
         _cacheMap = [NSMapTable strongToStrongObjectsMapTable];
         _capacity = capacity;
         
-        auto identifier = [NSUUID UUID].UUIDString;
-        auto queueName = [@"com.stx.lfucache.sync." stringByAppendingString:identifier];
-        auto attributes = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_CONCURRENT, QOS_CLASS_UTILITY, 0);
-        _syncQueue = dispatch_queue_create([queueName UTF8String], attributes);
-        
+        _lock = [[STXRWLock alloc] init];
+                
         _activeEvictionCount = MAX(_capacity / 5, 1);
         
         [[NSNotificationCenter defaultCenter] addObserver:self
@@ -67,23 +65,23 @@ static NSUInteger _defaultCacheCapacity = 100;
     auto cacheItem = [STXCacheItem itemWithKey:key value:object];
     
     __block STXCacheItem *exsitingCacheItem;
-    dispatch_sync(_syncQueue, ^{
+    [_lock read:^{
         exsitingCacheItem = [self->_cacheMap objectForKey:key];
-    });
+    }];
     
     if ([self _reachCapcaity]) {
         [self evict:_activeEvictionCount];
     }
     
-    dispatch_barrier_sync(_syncQueue, ^{
+    [_lock write:^{
         [self->_cacheMap setObject:cacheItem forKey:key];
         
         [self _incrementCacheFrequency:cacheItem];
-    });
+    }];
 }
 
 - (void)removeObjectForKey:(NSString *)key {
-    dispatch_barrier_sync(_syncQueue, ^{
+    [_lock write:^{
         auto cacheItem = [self->_cacheMap objectForKey:key];
         auto frequencyNode = cacheItem.frequencyItem;
         
@@ -101,22 +99,23 @@ static NSUInteger _defaultCacheCapacity = 100;
         if (frequencyNode.hasNoMember) {
             [frequencyNode eraseFromList:&self->_frequencyList];
         }
-    });
+    }];
 }
 
 - (id)objectForKey:(NSString *)key {
     __block STXCacheItem *object;
-    dispatch_sync(_syncQueue, ^{
+    
+    [_lock read:^{
         object = [self->_cacheMap objectForKey:key];
-    });
+    }];
     
     if (!object) {
         return nil;
     }
     
-    dispatch_barrier_sync(_syncQueue, ^{
+    [_lock write:^{
         [self _incrementCacheFrequency:object];
-    });
+    }];
     
     return object.value;
 }
@@ -127,7 +126,7 @@ static NSUInteger _defaultCacheCapacity = 100;
         return;
     }
     
-    dispatch_barrier_sync(_syncQueue, ^{
+    [_lock write:^{
         if (size <= count) {
             self->_frequencyList.clear();
             return [self->_cacheMap removeAllObjects];
@@ -160,7 +159,7 @@ static NSUInteger _defaultCacheCapacity = 100;
                 }
             }
         }
-    });
+    }];
 }
 
 #pragma mark - Private
@@ -208,6 +207,7 @@ static NSUInteger _defaultCacheCapacity = 100;
     return _capacity <= _cacheMap.count;
 }
 
+#pragma mark - Event Handler
 - (void)onRecevingMemorWarningNotif:(NSNotification *)notif {
     [self evict:_capacity];
 }
@@ -227,9 +227,10 @@ static NSUInteger _defaultCacheCapacity = 100;
 
 - (NSUInteger)size {
     __block NSUInteger size;
-    dispatch_sync(_syncQueue, ^{
+    
+    [_lock read:^{
         size = self->_cacheMap.count;
-    });
+    }];
     
     return size;
 }
