@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14881985767F14F4746906DB63C80F71 /* STXLFUCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D63E3C442A1F9B16CA1C4780F9DE5470 /* STXLFUCache-dummy.m */; };
-		26B3CB7296212BFFC044EABF253D05F9 /* STXLFUCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD524575774B7B6120F7F2F266984596 /* STXLFUCache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09A326C0F65BA5EA9851981A710C5234 /* STXFrequencyItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F979E1D24009437BFA522AF10F42588 /* STXFrequencyItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0B76F4DB1D050637C04F7056762C6C08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1688722C2DA3C2EC89E6F74F5CC4AFDA /* STXCacheItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 963DAA8DF34239307963E3F15DDBA81C /* STXCacheItem.mm */; };
+		357597999CEB4085A2BDEB6591737810 /* STXLFUCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A039C3F2C4BCA862F9445E091583A /* STXLFUCache-dummy.m */; };
+		3FDCC696BFE3F9DD317616D3C57ED5DC /* STXSEMLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6144F88DA0986658AE3315BEFF3B44C9 /* STXSEMLock.m */; };
+		503E1452C756FA84123C2373402B0295 /* STXLFUCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C573C995EAC3BB98118E61B8DFCF97B4 /* STXLFUCache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		559DE44559EB63859B71B72DCB3DE434 /* STXRWLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 966F93D87343AD565F351992000CAB07 /* STXRWLock.m */; };
+		586C287DD8FF906231E2FCA1F76E80F7 /* STXSEMLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 359D60C1E534DF7B062864300116E4FD /* STXSEMLock.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		61A153B0D44EEDBA987FE21EADDFC9BB /* Pods-STXLFUCache_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D111EFBF1BBF25224C00B7BB5D0925A /* Pods-STXLFUCache_Tests-dummy.m */; };
-		62A86288A67419B3C0BB4021DCB2129F /* STXFrequencyItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F47FAF50105603FC218E19C8ABCB589 /* STXFrequencyItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6A9ECBB6A5846948109B929C15DFDB95 /* STXLFUCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 28724AA6DD3E1C8DCEB865071FC80D9C /* STXLFUCache.mm */; };
-		73316E0D044814DBBF62C7245D18CCF7 /* STXCacheItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD4F9BE509014D9EF3EE08B0686A96A /* STXCacheItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		74649F453A8C24E26CA6D429C20E70ED /* STXFrequencyItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 364A9D394D918C23E96F0372350D7E4D /* STXFrequencyItem.mm */; };
+		676E690AC91DB0E9811C1F0794012F96 /* STXCacheItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7EF09BE292721B5A162D1C00C1EAEF /* STXCacheItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7F0F2167B0FCFE8A30742FBAF8B02AE4 /* Pods-STXLFUCache_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C90B5B0E0C0D2633420BE30B41263F4A /* Pods-STXLFUCache_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8310DF5D79FCABDAFEFBD1E2F9E55380 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		C282BC9E15B4ED8E1CB4CC0FEC7E1EE4 /* Pods-STXLFUCache_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51F871EE4E43E1BB94F27E102CFFE111 /* Pods-STXLFUCache_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4D5AE290BA10B7C45B561E73C1C7FF4 /* STXLFUCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = ADFEFEC728BA643DF1D877034AA7A87C /* STXLFUCache.mm */; };
 		CAA203AAD12C91872DA609022E286898 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		D0FB3A0E3734915B2E23E790925C5863 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		D861FA56DA8F53995E9E41F3296F427E /* STXLFUCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B965FFC161BAE5349BF888983CCC203 /* STXLFUCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAA04DC42E39FB1293E15960FBA0262E /* STXRWLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 829619CF7D793D9A8091E5DE4ABC5051 /* STXRWLock.m */; };
 		DBE4FC0D98BD8B40811778BE52D0977E /* Pods-STXLFUCache_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF363A3E37884588F6B843032F02064D /* Pods-STXLFUCache_Example-dummy.m */; };
-		EA92C62A1AF83034CD1114408977C35B /* STXCacheItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1F10E9274C18060CCFA36A34199FB84 /* STXCacheItem.mm */; };
-		F13EB73D9F3695FFDE8406691FA3427F /* STXRWLock.h in Headers */ = {isa = PBXBuildFile; fileRef = C01BAB04CAACC10D66DB59A46A525669 /* STXRWLock.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DCDD416DC239CED4CF294459FA7AF518 /* STXLFUCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 69365601D3EB1BEB38E46117F0DA3F3F /* STXLFUCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF7AA343D9C3DD4103C059967584C60E /* STXFrequencyItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 741EC76CF92E7B39FAE9FC634F35E34F /* STXFrequencyItem.mm */; };
+		F2CEED09116636EE28751F901409C4A4 /* STXRWLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DDC3D36F3C8D4D9B1DEC3616CC90A16 /* STXRWLock.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,53 +46,55 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0893E1F6A717BCBD71B16269F67E4684 /* STXLFUCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STXLFUCache.xcconfig; sourceTree = "<group>"; };
 		0DA243504C7CAAAE6D85AFE105E1B411 /* Pods_STXLFUCache_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_STXLFUCache_Tests.framework; path = "Pods-STXLFUCache_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		19DCF029010ACA0F0C6154FF6A0DA868 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		18FC8A1A6BFDC8232F2A15C05D2D8ACE /* STXLFUCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STXLFUCache.xcconfig; sourceTree = "<group>"; };
 		1B951ABA655A3EBE1F3E73D507992BC9 /* Pods-STXLFUCache_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STXLFUCache_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1D111EFBF1BBF25224C00B7BB5D0925A /* Pods-STXLFUCache_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-STXLFUCache_Tests-dummy.m"; sourceTree = "<group>"; };
-		1E280BACA33D4FECAD3CCAF20B58C74A /* STXLFUCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = STXLFUCache.modulemap; sourceTree = "<group>"; };
 		2293E9A9BEF14DDD1C8AB48A2D004D2A /* Pods-STXLFUCache_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STXLFUCache_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		27A4E0EEC8DF54EC81EA2AE779299629 /* STXLFUCache.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = STXLFUCache.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		28724AA6DD3E1C8DCEB865071FC80D9C /* STXLFUCache.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = STXLFUCache.mm; path = STXLFUCache/Classes/STXLFUCache.mm; sourceTree = "<group>"; };
+		2A7EF09BE292721B5A162D1C00C1EAEF /* STXCacheItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STXCacheItem.h; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		327A039C3F2C4BCA862F9445E091583A /* STXLFUCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STXLFUCache-dummy.m"; sourceTree = "<group>"; };
 		332F5CA8D7F3082780F297689AF32F4B /* Pods-STXLFUCache_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STXLFUCache_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		33E44CC86F804C255E2B3A367BE40527 /* Pods-STXLFUCache_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STXLFUCache_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		364A9D394D918C23E96F0372350D7E4D /* STXFrequencyItem.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = STXFrequencyItem.mm; sourceTree = "<group>"; };
-		4CD4F9BE509014D9EF3EE08B0686A96A /* STXCacheItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STXCacheItem.h; sourceTree = "<group>"; };
+		359D60C1E534DF7B062864300116E4FD /* STXSEMLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STXSEMLock.h; sourceTree = "<group>"; };
+		3F979E1D24009437BFA522AF10F42588 /* STXFrequencyItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STXFrequencyItem.h; sourceTree = "<group>"; };
 		51F871EE4E43E1BB94F27E102CFFE111 /* Pods-STXLFUCache_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-STXLFUCache_Example-umbrella.h"; sourceTree = "<group>"; };
+		5DDC3D36F3C8D4D9B1DEC3616CC90A16 /* STXRWLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STXRWLock.h; sourceTree = "<group>"; };
+		6144F88DA0986658AE3315BEFF3B44C9 /* STXSEMLock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STXSEMLock.m; sourceTree = "<group>"; };
+		64EEDD47850634DB92C12F9053F65898 /* STXLFUCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = STXLFUCache.modulemap; sourceTree = "<group>"; };
 		65E0D59CC607693EFE6C9F7235F80629 /* Pods_STXLFUCache_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_STXLFUCache_Example.framework; path = "Pods-STXLFUCache_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69365601D3EB1BEB38E46117F0DA3F3F /* STXLFUCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STXLFUCache.h; path = STXLFUCache/Classes/STXLFUCache.h; sourceTree = "<group>"; };
 		6DBEF6A2C70CFB4150A1B88817F895E8 /* Pods-STXLFUCache_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-STXLFUCache_Example.modulemap"; sourceTree = "<group>"; };
-		7047265F695B3EADC0F25B0ACBF32E0C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		71FBE73791BE3409D8E945BB964D82FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		741EC76CF92E7B39FAE9FC634F35E34F /* STXFrequencyItem.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = STXFrequencyItem.mm; sourceTree = "<group>"; };
 		80DEC2A6A082A2363C9C04EAD20EF459 /* Pods-STXLFUCache_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STXLFUCache_Example-Info.plist"; sourceTree = "<group>"; };
-		829619CF7D793D9A8091E5DE4ABC5051 /* STXRWLock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STXRWLock.m; sourceTree = "<group>"; };
-		8F47FAF50105603FC218E19C8ABCB589 /* STXFrequencyItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STXFrequencyItem.h; sourceTree = "<group>"; };
-		9B965FFC161BAE5349BF888983CCC203 /* STXLFUCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STXLFUCache.h; path = STXLFUCache/Classes/STXLFUCache.h; sourceTree = "<group>"; };
+		889EFD0A9D9F957B366E2E692D182D3B /* STXLFUCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STXLFUCache-prefix.pch"; sourceTree = "<group>"; };
+		963DAA8DF34239307963E3F15DDBA81C /* STXCacheItem.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = STXCacheItem.mm; sourceTree = "<group>"; };
+		966F93D87343AD565F351992000CAB07 /* STXRWLock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STXRWLock.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C01BAB04CAACC10D66DB59A46A525669 /* STXRWLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STXRWLock.h; sourceTree = "<group>"; };
+		ADFEFEC728BA643DF1D877034AA7A87C /* STXLFUCache.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = STXLFUCache.mm; path = STXLFUCache/Classes/STXLFUCache.mm; sourceTree = "<group>"; };
+		AE549C16D4B53CEC7C0E69DF7B728B65 /* STXLFUCache-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "STXLFUCache-Info.plist"; sourceTree = "<group>"; };
 		C251EB1E2FD6866E16885CBC72CB5FC0 /* Pods-STXLFUCache_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-STXLFUCache_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C39E0DC197A7A817E6393F3558C3F67E /* STXLFUCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = STXLFUCache.framework; path = STXLFUCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D451F3E80C5E45E8E45DC27D7A4EF5 /* Pods-STXLFUCache_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-STXLFUCache_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C573C995EAC3BB98118E61B8DFCF97B4 /* STXLFUCache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STXLFUCache-umbrella.h"; sourceTree = "<group>"; };
 		C90B5B0E0C0D2633420BE30B41263F4A /* Pods-STXLFUCache_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-STXLFUCache_Tests-umbrella.h"; sourceTree = "<group>"; };
-		CD524575774B7B6120F7F2F266984596 /* STXLFUCache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STXLFUCache-umbrella.h"; sourceTree = "<group>"; };
 		D313522E2474096EC7287571497CB415 /* Pods-STXLFUCache_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STXLFUCache_Tests-Info.plist"; sourceTree = "<group>"; };
-		D543679A8478958BEC5E72AAFDB4DF39 /* STXLFUCache-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "STXLFUCache-Info.plist"; sourceTree = "<group>"; };
-		D63E3C442A1F9B16CA1C4780F9DE5470 /* STXLFUCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STXLFUCache-dummy.m"; sourceTree = "<group>"; };
+		D3E07AB065C7E2A69212356E76F6BCE8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		DC6E1A1B9E2190C54C2A7EACDD70E310 /* Pods-STXLFUCache_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STXLFUCache_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DF363A3E37884588F6B843032F02064D /* Pods-STXLFUCache_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-STXLFUCache_Example-dummy.m"; sourceTree = "<group>"; };
 		E171D431B5F787241B94A09BDF08465B /* Pods-STXLFUCache_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-STXLFUCache_Tests.modulemap"; sourceTree = "<group>"; };
+		E22BCE197F424A081A9B7ABB45BA2E4D /* STXLFUCache.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = STXLFUCache.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E66842ACE70D7BBA9D2B0F3A22AF313D /* Pods-STXLFUCache_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-STXLFUCache_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E6866BFEDB06A79E38F4A934308EC560 /* Pods-STXLFUCache_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STXLFUCache_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F1F10E9274C18060CCFA36A34199FB84 /* STXCacheItem.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = STXCacheItem.mm; sourceTree = "<group>"; };
-		FF322A71073F58E97D4DE9232CE13F25 /* STXLFUCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STXLFUCache-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		390313B87C69F95F35D737585683F395 /* Frameworks */ = {
+		5EB4267E44EF9FC0E2DBF41ADD283A47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8310DF5D79FCABDAFEFBD1E2F9E55380 /* Foundation.framework in Frameworks */,
+				0B76F4DB1D050637C04F7056762C6C08 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,26 +117,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B0A5B78F4C77650FB9F65B74E0AA5A9 /* Private */ = {
+		39B4DEAB7600265396A6EC526442F2BA /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				4CD4F9BE509014D9EF3EE08B0686A96A /* STXCacheItem.h */,
-				F1F10E9274C18060CCFA36A34199FB84 /* STXCacheItem.mm */,
-				8F47FAF50105603FC218E19C8ABCB589 /* STXFrequencyItem.h */,
-				364A9D394D918C23E96F0372350D7E4D /* STXFrequencyItem.mm */,
-				C01BAB04CAACC10D66DB59A46A525669 /* STXRWLock.h */,
-				829619CF7D793D9A8091E5DE4ABC5051 /* STXRWLock.m */,
+				D3E07AB065C7E2A69212356E76F6BCE8 /* LICENSE */,
+				71FBE73791BE3409D8E945BB964D82FE /* README.md */,
+				E22BCE197F424A081A9B7ABB45BA2E4D /* STXLFUCache.podspec */,
 			);
-			name = Private;
-			path = STXLFUCache/Classes/Private;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		3F121BFF270BDE2A806F634FB2FEBF91 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B4F6B72B13B6E9D9B283B4528E55D6A6 /* STXLFUCache */,
+				BEA2017E7A5301353627C57842857F2F /* STXLFUCache */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4B8979469520FEA45443972BF92C0F5F /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				2A7EF09BE292721B5A162D1C00C1EAEF /* STXCacheItem.h */,
+				963DAA8DF34239307963E3F15DDBA81C /* STXCacheItem.mm */,
+				3F979E1D24009437BFA522AF10F42588 /* STXFrequencyItem.h */,
+				741EC76CF92E7B39FAE9FC634F35E34F /* STXFrequencyItem.mm */,
+				5DDC3D36F3C8D4D9B1DEC3616CC90A16 /* STXRWLock.h */,
+				966F93D87343AD565F351992000CAB07 /* STXRWLock.m */,
+				359D60C1E534DF7B062864300116E4FD /* STXSEMLock.h */,
+				6144F88DA0986658AE3315BEFF3B44C9 /* STXSEMLock.m */,
+			);
+			name = Private;
+			path = STXLFUCache/Classes/Private;
 			sourceTree = "<group>";
 		};
 		4FE29ADD2AEF418F1A17D820BA380D7B /* Pods-STXLFUCache_Example */ = {
@@ -168,41 +184,31 @@
 			path = "Target Support Files/Pods-STXLFUCache_Tests";
 			sourceTree = "<group>";
 		};
-		87ED16B45C98096AC95FC25674B79810 /* Support Files */ = {
+		AD3E21DC5D455B1D17E8088919F493D8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1E280BACA33D4FECAD3CCAF20B58C74A /* STXLFUCache.modulemap */,
-				0893E1F6A717BCBD71B16269F67E4684 /* STXLFUCache.xcconfig */,
-				D63E3C442A1F9B16CA1C4780F9DE5470 /* STXLFUCache-dummy.m */,
-				D543679A8478958BEC5E72AAFDB4DF39 /* STXLFUCache-Info.plist */,
-				FF322A71073F58E97D4DE9232CE13F25 /* STXLFUCache-prefix.pch */,
-				CD524575774B7B6120F7F2F266984596 /* STXLFUCache-umbrella.h */,
+				64EEDD47850634DB92C12F9053F65898 /* STXLFUCache.modulemap */,
+				18FC8A1A6BFDC8232F2A15C05D2D8ACE /* STXLFUCache.xcconfig */,
+				327A039C3F2C4BCA862F9445E091583A /* STXLFUCache-dummy.m */,
+				AE549C16D4B53CEC7C0E69DF7B728B65 /* STXLFUCache-Info.plist */,
+				889EFD0A9D9F957B366E2E692D182D3B /* STXLFUCache-prefix.pch */,
+				C573C995EAC3BB98118E61B8DFCF97B4 /* STXLFUCache-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/STXLFUCache";
 			sourceTree = "<group>";
 		};
-		B4F6B72B13B6E9D9B283B4528E55D6A6 /* STXLFUCache */ = {
+		BEA2017E7A5301353627C57842857F2F /* STXLFUCache */ = {
 			isa = PBXGroup;
 			children = (
-				9B965FFC161BAE5349BF888983CCC203 /* STXLFUCache.h */,
-				28724AA6DD3E1C8DCEB865071FC80D9C /* STXLFUCache.mm */,
-				BD10F792271606D00B4651C72E9D110B /* Pod */,
-				1B0A5B78F4C77650FB9F65B74E0AA5A9 /* Private */,
-				87ED16B45C98096AC95FC25674B79810 /* Support Files */,
+				69365601D3EB1BEB38E46117F0DA3F3F /* STXLFUCache.h */,
+				ADFEFEC728BA643DF1D877034AA7A87C /* STXLFUCache.mm */,
+				39B4DEAB7600265396A6EC526442F2BA /* Pod */,
+				4B8979469520FEA45443972BF92C0F5F /* Private */,
+				AD3E21DC5D455B1D17E8088919F493D8 /* Support Files */,
 			);
 			name = STXLFUCache;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		BD10F792271606D00B4651C72E9D110B /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				19DCF029010ACA0F0C6154FF6A0DA868 /* LICENSE */,
-				7047265F695B3EADC0F25B0ACBF32E0C /* README.md */,
-				27A4E0EEC8DF54EC81EA2AE779299629 /* STXLFUCache.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -262,15 +268,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		966DD158EA362F9FB9656264B39F1F62 /* Headers */ = {
+		98FE450657F6A7F5F9F99FDE60CE340C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73316E0D044814DBBF62C7245D18CCF7 /* STXCacheItem.h in Headers */,
-				62A86288A67419B3C0BB4021DCB2129F /* STXFrequencyItem.h in Headers */,
-				26B3CB7296212BFFC044EABF253D05F9 /* STXLFUCache-umbrella.h in Headers */,
-				D861FA56DA8F53995E9E41F3296F427E /* STXLFUCache.h in Headers */,
-				F13EB73D9F3695FFDE8406691FA3427F /* STXRWLock.h in Headers */,
+				676E690AC91DB0E9811C1F0794012F96 /* STXCacheItem.h in Headers */,
+				09A326C0F65BA5EA9851981A710C5234 /* STXFrequencyItem.h in Headers */,
+				503E1452C756FA84123C2373402B0295 /* STXLFUCache-umbrella.h in Headers */,
+				DCDD416DC239CED4CF294459FA7AF518 /* STXLFUCache.h in Headers */,
+				F2CEED09116636EE28751F901409C4A4 /* STXRWLock.h in Headers */,
+				586C287DD8FF906231E2FCA1F76E80F7 /* STXSEMLock.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,12 +332,12 @@
 		};
 		62EA07238429F442CD12CAD288C44B5D /* STXLFUCache */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 315EF473DDD08591677BDE5FE03FC023 /* Build configuration list for PBXNativeTarget "STXLFUCache" */;
+			buildConfigurationList = 72FDC4B6CD405FEF35E8128CF995F0E7 /* Build configuration list for PBXNativeTarget "STXLFUCache" */;
 			buildPhases = (
-				966DD158EA362F9FB9656264B39F1F62 /* Headers */,
-				37C354EB4C9893DE698DA6B8B0C7AFEB /* Sources */,
-				390313B87C69F95F35D737585683F395 /* Frameworks */,
-				DCF66D64CAA45E5A8CA13FE9D0C3F0E7 /* Resources */,
+				98FE450657F6A7F5F9F99FDE60CE340C /* Headers */,
+				D140F9609217EF3C702DA786A4C3246C /* Sources */,
+				5EB4267E44EF9FC0E2DBF41ADD283A47 /* Frameworks */,
+				1FEA35858169DC4CDC9211A8BF704942 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -377,14 +384,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C670F9414F51DEBDBBFD155C4FCA8B7C /* Resources */ = {
+		1FEA35858169DC4CDC9211A8BF704942 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCF66D64CAA45E5A8CA13FE9D0C3F0E7 /* Resources */ = {
+		C670F9414F51DEBDBBFD155C4FCA8B7C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -394,15 +401,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		37C354EB4C9893DE698DA6B8B0C7AFEB /* Sources */ = {
+		D140F9609217EF3C702DA786A4C3246C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA92C62A1AF83034CD1114408977C35B /* STXCacheItem.mm in Sources */,
-				74649F453A8C24E26CA6D429C20E70ED /* STXFrequencyItem.mm in Sources */,
-				14881985767F14F4746906DB63C80F71 /* STXLFUCache-dummy.m in Sources */,
-				6A9ECBB6A5846948109B929C15DFDB95 /* STXLFUCache.mm in Sources */,
-				DAA04DC42E39FB1293E15960FBA0262E /* STXRWLock.m in Sources */,
+				1688722C2DA3C2EC89E6F74F5CC4AFDA /* STXCacheItem.mm in Sources */,
+				DF7AA343D9C3DD4103C059967584C60E /* STXFrequencyItem.mm in Sources */,
+				357597999CEB4085A2BDEB6591737810 /* STXLFUCache-dummy.m in Sources */,
+				C4D5AE290BA10B7C45B561E73C1C7FF4 /* STXLFUCache.mm in Sources */,
+				559DE44559EB63859B71B72DCB3DE434 /* STXRWLock.m in Sources */,
+				3FDCC696BFE3F9DD317616D3C57ED5DC /* STXSEMLock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,36 +481,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		07F44455102FBA686D8F550F6364FF11 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0893E1F6A717BCBD71B16269F67E4684 /* STXLFUCache.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/STXLFUCache/STXLFUCache-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/STXLFUCache/STXLFUCache-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/STXLFUCache/STXLFUCache.modulemap";
-				PRODUCT_MODULE_NAME = STXLFUCache;
-				PRODUCT_NAME = STXLFUCache;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		1AF7ECD54632FED7EC0FD1A4E6AA4C03 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -630,9 +608,9 @@
 			};
 			name = Release;
 		};
-		6C2D6FDDB590140B0FFF453F564D3F6D /* Release */ = {
+		5C95207D993306B94FAA1150113EE300 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0893E1F6A717BCBD71B16269F67E4684 /* STXLFUCache.xcconfig */;
+			baseConfigurationReference = 18FC8A1A6BFDC8232F2A15C05D2D8ACE /* STXLFUCache.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -759,23 +737,53 @@
 			};
 			name = Release;
 		};
+		FEE502D7E580D5E0EF383C7924AE1260 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18FC8A1A6BFDC8232F2A15C05D2D8ACE /* STXLFUCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/STXLFUCache/STXLFUCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/STXLFUCache/STXLFUCache-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/STXLFUCache/STXLFUCache.modulemap";
+				PRODUCT_MODULE_NAME = STXLFUCache;
+				PRODUCT_NAME = STXLFUCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		315EF473DDD08591677BDE5FE03FC023 /* Build configuration list for PBXNativeTarget "STXLFUCache" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				07F44455102FBA686D8F550F6364FF11 /* Debug */,
-				6C2D6FDDB590140B0FFF453F564D3F6D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
 				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72FDC4B6CD405FEF35E8128CF995F0E7 /* Build configuration list for PBXNativeTarget "STXLFUCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEE502D7E580D5E0EF383C7924AE1260 /* Debug */,
+				5C95207D993306B94FAA1150113EE300 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,6 +7,7 @@
 
 #import "STXFrequencyItem.h"
 #import "STXCacheItem.h"
+#import "STXSEMLock.h"
 
 @interface STXFrequencyItem ()
 @property (nonatomic, assign) NSUInteger frequency;
@@ -15,7 +16,9 @@
 @property (nonatomic) NSMapTable<STXCacheItem *, id> *members;
 @end
 
-@implementation STXFrequencyItem
+@implementation STXFrequencyItem {
+    STXSEMLock *_lock;
+}
 
 + (instancetype)itemWithFrequency:(NSUInteger)frequency toList:(std::list<STXFrequencyItem *> *)frequencyList {
     return [self itemWithFrequency:frequency toList:frequencyList afterNode:frequencyList->end()];
@@ -43,29 +46,32 @@
 - (instancetype)init {
     if (self = [super init]) {
         _members = [NSMapTable weakToStrongObjectsMapTable];
+        _lock = [STXSEMLock new];
     }
     return self;
 }
 
 - (void)addMember:(STXCacheItem *)member {
-    @synchronized(_members) {
-        [_members setObject:@(1) forKey:member];
-    }
+    [_lock lock:^{
+        [self->_members setObject:@(1) forKey:member];
+    }];
 }
 
 - (void)removeMember:(STXCacheItem *)member {
-    @synchronized(_members) {
-        [_members removeObjectForKey:member];
-    }
+    [_lock lock:^{
+        [self->_members removeObjectForKey:member];
+    }];
 }
 
 - (STXCacheItem *)dropMember {
-    @synchronized (_members) {
-        auto removedKey = _members.keyEnumerator.nextObject;
+    __block id removedKey;
+    
+    [_lock lock:^{
+        removedKey = _members.keyEnumerator.nextObject;
         [_members removeObjectForKey:removedKey];
-        
-        return removedKey;
-    }
+    }];
+    
+    return removedKey;
 }
 
 - (STXFrequencyListNode)nextListNode {
@@ -73,9 +79,13 @@
 }
 
 - (BOOL)hasNoMember {
-    @synchronized (_members) {
-        return _members.count == 0;
-    }
+    __block BOOL isEmpty;
+
+    [_lock lock:^{
+        isEmpty = _members.count == 0;
+    }];
+    
+    return isEmpty;
 }
 
 - (void)eraseFromList:(std::list<STXFrequencyItem *> *)list {

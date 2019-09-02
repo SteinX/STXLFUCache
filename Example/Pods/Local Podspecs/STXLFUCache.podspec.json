@@ -1,6 +1,6 @@
 {
   "name": "STXLFUCache",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A simple LFU memory cache with constant time complexity for elementary operations",
   "description": "A simple LFU memory cache with constant time complexity for elementary operations.",
   "homepage": "https://github.com/SteinX/STXLFUCache",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/SteinX/STXLFUCache.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
