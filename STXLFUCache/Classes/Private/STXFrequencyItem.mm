@@ -67,8 +67,8 @@
     __block id removedKey;
     
     [_lock lock:^{
-        removedKey = _members.keyEnumerator.nextObject;
-        [_members removeObjectForKey:removedKey];
+        removedKey = self->_members.keyEnumerator.nextObject;
+        [self->_members removeObjectForKey:removedKey];
     }];
     
     return removedKey;
@@ -82,7 +82,7 @@
     __block BOOL isEmpty;
 
     [_lock lock:^{
-        isEmpty = _members.count == 0;
+        isEmpty = self->_members.count == 0;
     }];
     
     return isEmpty;
